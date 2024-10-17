@@ -1,0 +1,14 @@
+body{
+    margin-top: 100px;
+    background-color: black;
+    font-family: cursive;
+}
+#root{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+header{
+    margin-top: -80px;
+}

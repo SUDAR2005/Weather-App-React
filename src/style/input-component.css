@@ -1,0 +1,18 @@
+.field {
+    display: flex;
+}
+
+.field input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: transparent;
+    color: white;
+    font-family: cursive;
+}
+
+.field input:focus {
+    background-color: #ccc;
+    color: black;
+}

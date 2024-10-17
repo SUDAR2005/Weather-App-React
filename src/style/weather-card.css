@@ -1,0 +1,53 @@
+.weathercard {
+    color: black;
+    width: 700px;
+    height: 400px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.763);    
+    border-radius: 3%;
+    border: 1px solid rgba(255, 255, 255, 0.046);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: grid;
+    padding: 20px;
+}
+#id{
+    margin-bottom: -250px;
+}
+.weathercard h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.box1, .box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+    grid-gap: 20px; /* Reduced gap between columns */
+    align-items: start; 
+    justify-items: center; /* Align items closer together horizontally */
+    padding: 0 10px;
+}
+.box1{
+    grid-template-rows: 100px;
+}
+.box1 h3, .box2 h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.param1, .param2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Reduced vertical gap */
+}
+
+@media (max-width: 768px) {
+    .weathercard {
+        width: 100%;
+        height: auto;
+    }
+
+    .box1, .box2 {
+        grid-template-columns: 1fr; 
+    }
+}

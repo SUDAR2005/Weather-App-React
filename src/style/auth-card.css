@@ -1,0 +1,72 @@
+.main-card h3{
+    text-align: center;
+    font-size: 50px;
+}
+*{
+    color: white;
+}
+.field{
+    display: flex;
+    align-items: center;
+}
+label{
+    font-size: 20px;
+    padding-right: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+.input-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+.input-div-login {
+    grid-template-rows: repeat(2, 40px);
+  }
+  
+.input-div-signup {
+    grid-template-rows: repeat(3, 40px);
+  }
+  
+.field input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: transparent;
+    color: white;
+    font-family: cursive;
+}
+.field input:focus{
+    background-color: #ccc;
+    color: black;
+}
+
+.btn{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -50px;
+}
+
+.main-card{
+    height: 400px;
+    width: 500px;
+}
+.btn{
+    margin-top: 70px;
+}
+.field .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }

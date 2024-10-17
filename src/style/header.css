@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: #ccc;
+}
+
+.search {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+sup{
+    font-size: 15px;
+}
+.header {
+    position: relative; /* Ensure the dropdown is positioned relative to the header */
+}
+
+.city-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    border: 1px solid #ccc;
+    max-height: 150px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    width: calc(100% - 16px);
+    margin-top: 200px;
+}
+
+.city-list li {
+    padding: 8px;
+    cursor: pointer;
+    color: black;
+}
+
+.city-list li:hover {
+    background-color: #f0f0f0;
+}
+
