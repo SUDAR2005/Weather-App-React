@@ -21,7 +21,7 @@ const modalStyle = {
     outline: 'none',
 };
 
-const Header = ({ isLoggedIn, setIsLoggedIn }) => { // Accept props
+const Header = ({ isLoggedIn, setIsLoggedIn }) => {
     const navItems = [
         { label: 'Home', link: '/' },
         { label: 'About', link: '/about' },
@@ -83,7 +83,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => { // Accept props
                     ))}
                 </ul>
             )}
-            {!isLoggedIn ? ( // Show login button if not logged in
+            {!isLoggedIn ? ( 
                 <Button variant="contained" color="#ccc" onClick={() => { window.location.href = '/login'; }}>
                     Login
                 </Button>
