@@ -13,7 +13,7 @@ const ServiceCard = ({ service }) => {
             <h2>{service.name}</h2>
             <p>{service.description}</p>
             <h3>{service.price}</h3>
-            <button>Add to Cart</button>
+            <button style={{backgroundColor:'#ccc',fontFamily:'cursive',borderRadius:'4px'}}>Add to Cart</button>
         </div>
     );
 };
